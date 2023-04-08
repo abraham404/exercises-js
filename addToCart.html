@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Abraham</title>
+</head>
+<body>
+    <p>Cart Quantify</p>
+    <button id='show' onclick="cartBuy('show')">Show Quantify</button>
+    <button id='add' onclick="cartBuy('add')">Add to Cart</button>
+    <button id='plusTwo' onclick="cartBuy('plusTwo')">+2</button>
+    <button id='plusThree' onclick="cartBuy('plusThree')">+3</button>
+    <button id='reset' onclick="cartBuy('reset')">Reset Cart</button>
+<script>
+    let count = 0;
+
+    function cartBuy(btn){
+
+        switch(btn){
+            case 'show':
+                console.log(count);
+                break;
+            case 'add':
+                count++;
+                console.log(count);
+                break;
+            case 'plusTwo':
+                count += 2;
+                console.log(count);
+                break;   
+            case 'plusThree':
+                count += 3;
+                console.log(count);
+                break;
+            case 'reset':
+                count = 0;
+                console.log(count);
+                break;    
+        }
+
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
