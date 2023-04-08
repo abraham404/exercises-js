@@ -12,6 +12,11 @@
     <button id='add' onclick="cartBuy('add')">Add to Cart</button>
     <button id='plusTwo' onclick="cartBuy('plusTwo')">+2</button>
     <button id='plusThree' onclick="cartBuy('plusThree')">+3</button>
+    <button id='plusFour' onclick="cartBuy('plusFour')">+4</button>
+    <button id='plusFive' onclick="cartBuy('plusFive')">+5</button>
+    <button id='remove' onclick="cartBuy('remove')">Remove</button>
+    <button id='minThree' onclick="cartBuy('minThree')">-3</button>
+    <button id='minFour' onclick="cartBuy('minFour')">-4</button>
     <button id='reset' onclick="cartBuy('reset')">Reset Cart</button>
 <script>
     let count = 0;
@@ -32,6 +37,26 @@
                 break;   
             case 'plusThree':
                 count += 3;
+                console.log('Cart quantity: ' + count);
+                break;
+            case 'plusFour':
+                count += 4;
+                console.log('Cart quantity: ' + count);
+                break;
+            case 'plusFive':
+                count += 5;
+                console.log('Cart quantity: ' + count);
+                break;
+            case 'remove':
+                count--;
+                console.log('Cart quantity: ' + count);
+                break;
+            case 'minThree':
+                count -= 3;
+                console.log('Cart quantity: ' + count);
+                break;
+            case 'minFour':
+                count -= 4;
                 console.log('Cart quantity: ' + count);
                 break;
             case 'reset':
